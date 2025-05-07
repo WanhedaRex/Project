@@ -46,4 +46,6 @@
     <string name="loan_term_content_description">Plazo del préstamo en meses</string>
     <string name="simulate_button_content_description">Iniciar simulación de préstamo</string>
     <string name="app_logo_content_description">Logotipo de la aplicación</string>
+    <string name="simulation_success">Simulación completada con éxito</string>
+    <string name="simulation_failure">Simulación no aprobada</string>
 </resources>

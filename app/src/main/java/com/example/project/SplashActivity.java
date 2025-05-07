@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Looper;
 import androidx.appcompat.app.AppCompatActivity;
 public class SplashActivity extends AppCompatActivity {
-    private static final long SPLASH_DURATION = 2000; 
+    private static final long SPLASH_DURATION = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,6 @@ public class SplashActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             } catch (Exception e) {
-                // Fallback in case LoginActivity is not found
                 e.printStackTrace();
             }
         }, SPLASH_DURATION);
