@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/dark_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loan_title"
+                android:textSize="20sp"
+                android:textColor="@color/gold_accent"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/loan_title_content_description" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/gold_accent"
+                android:textColorHint="#A0A0A0"
+                style="@style/TextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/loan_amount_hint"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/light_text"
+                    android:contentDescription="@string/loan_amount_content_description" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/gold_accent"
+                android:textColorHint="#A0A0A0"
+                style="@style/TextInputLayoutStyle"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTerm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/loan_term_hint"
+                    android:inputType="number"
+                    android:textColor="@color/light_text"
+                    android:contentDescription="@string/loan_term_content_description" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimation"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSimulate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/simulate_button"
+                android:backgroundTint="@color/gold_accent"
+                android:textColor="@color/dark_background"
+                android:layout_marginTop="16dp"
+                app:cornerRadius="8dp"
+                app:rippleColor="@color/gold_pressed"
+                android:contentDescription="@string/simulate_button_content_description" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/dark_background"
+        app:itemTextColor="@color/light_text"
+        app:itemIconTint="@color/gold_accent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

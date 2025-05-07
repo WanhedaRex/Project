@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_background">#1E1E1E</color>
+    <color name="gold_accent">#D4A017</color>
+    <color name="light_text">#E0E0E0</color>
+    <color name="input_background">#2C2C2C</color>
+    <color name="gold_pressed">#B8860B</color>
+</resources>
